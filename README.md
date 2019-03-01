@@ -66,10 +66,10 @@
   例②：
     
     $.ajax({
-    url: 'xxxx',
-    success.function(result){
-    console.log('a')
-    }
+      url: 'xxxx',
+      success.function(result){
+        console.log('a')
+      }
     }) // ajax加载完成被放入 异步队列
     setTimeout(function(){console.log('b')},100)  //100ms之后被放入 异步队列
     setTimeout(function(){console.log('c')})  //立刻被放入 异步队列
